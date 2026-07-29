@@ -11,4 +11,3 @@ st.title("🦟 Malaria Symptom Triage Helper")
 st.write(
     "Use the navigation menu on the left to explore the project."
 )
-
