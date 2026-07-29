@@ -1,5 +1,6 @@
 import joblib
 import pandas as pd
+from src.utils import get_recommendation
 
 diagnosis_model = joblib.load(
     "models/malaria_diagnosis_rf.pkl"
@@ -93,23 +94,11 @@ def malaria_triage(patient_data):
         severity_pred
     ]
 
-    if severity_label == "Severe":
+    
 
-        recommendation = (
-            "Immediate hospital admission required."
-        )
-
-    elif severity_label == "Moderate":
-
-        recommendation = (
-            "Seek medical attention within 24 hours."
-        )
-
-    else:
-
-        recommendation = (
-            "Outpatient treatment and monitoring recommended."
-        )
+    recommendation = get_recommendation(
+    severity_label
+)
 
     return {
         "Diagnosis": diagnosis_label,
