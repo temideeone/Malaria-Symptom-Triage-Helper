@@ -1,5 +1,11 @@
 # Malaria Symptom Triage Helper
 
+## Live Demo
+
+🌐 Streamlit App:
+https://malaria-symptom-triage-apper-jc4mgtdy2qfj5cfz3ty4pm.streamlit.app/
+
+
 ## Overview
 
 The Malaria Symptom Triage Helper is a Machine Learning-powered healthcare decision support system designed to predict malaria diagnosis and assess disease severity based on patient symptoms, clinical measurements, and risk factors.
